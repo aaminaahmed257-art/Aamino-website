@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Marks Report</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f8f9fa;
+    padding:20px;
+}
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+}
+
+.marks-table{
+    width:100%;
+    min-width:700px;
+    border-collapse:collapse;
+    background:#fff;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    border-radius:8px;
+    overflow:hidden;
+}
+
+caption{
+    font-size:1.8rem;
+    font-weight:bold;
+    color:#333;
+    margin-bottom:15px;
+}
+
+.marks-table thead{
+    background:#007bff;
+    color:white;
+}
+
+.marks-table th,
+.marks-table td{
+    padding:15px;
+    text-align:left;
+    border-bottom:1px solid #ddd;
+}
+
+.marks-table tbody tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+.marks-table tbody tr:hover{
+    background:#f1f1f1;
+}
+
+.btn-edit{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.btn-delete{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.btn-edit:hover{
+    background:#218838;
+}
+
+.btn-delete:hover{
+    background:#c82333;
+}
+
+/* Responsive Design */
+
+@media (max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    caption{
+        font-size:1.4rem;
+    }
+
+    .marks-table th,
+    .marks-table td{
+        padding:10px;
+        font-size:14px;
+    }
+
+    .btn-edit,
+    .btn-delete{
+        width:100%;
+        margin-bottom:5px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="table-container">
+
+<table class="marks-table">
+
+<caption>Xogta Ardayda</caption>
+
+<thead>
+<tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>MATH</th>
+    <th>ENGLISH</th>
+    <th>SCIENCE</th>
+    <th>BUTTON</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+    <td>C1250095</td>
+    <td>Sacad Sicid</td>
+    <td>90</td>
+    <td>100</td>
+    <td>80</td>
+    <td>
+        <button class="btn-edit">Edit</button>
+        <button class="btn-delete">Delete</button>
+    </td>
+</tr>
+
+<tr>
+    <td>C125007</td>
+    <td>Cabdi Raxmaan</td>
+    <td>87</td>
+    <td>100</td>
+    <td>85</td>
+    <td>
+        <button class="btn-edit">Edit</button>
+        <button class="btn-delete">Delete</button>
+    </td>
+</tr>
+
+<tr>
+    <td>C125668</td>
+    <td>Sabir Cali</td>
+    <td>90</td>
+    <td>91</td>
+    <td>79</td>
+    <td>
+        <button class="btn-edit">Edit</button>
+        <button class="btn-delete">Delete</button>
+    </td>
+</tr>
+
+<tr>
+    <td>C125669</td>
+    <td>Maxamed Macalin</td>
+    <td>90</td>
+    <td>80</td>
+    <td>79</td>
+    <td>
+        <button class="btn-edit">Edit</button>
+        <button class="btn-delete">Delete</button>
+    </td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</body>
+  </html>
